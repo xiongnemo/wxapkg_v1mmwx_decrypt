@@ -1,3 +1,9 @@
+# samples
+samples/
+
+# wxapkg
+*.wxapkg
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
