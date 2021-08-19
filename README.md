@@ -1,6 +1,12 @@
 # wxapkg_v1mmwx_decrypt
 DECRYPT process of V1MMWX type of encryption. Python port of pc_wxapkg_decrypt (https://github.com/BlackTrace/pc_wxapkg_decrypt)
 
+## Requirements
+
+```
+pycryptodome==3.10.1
+```
+
 ## Usage
 
 ```python
