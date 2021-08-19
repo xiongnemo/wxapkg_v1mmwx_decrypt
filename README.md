@@ -31,14 +31,16 @@ Header check: Header from file: b'V1MMWX'
 Header check: V1MMWX_HEADER:    b'V1MMWX'
 Generated AES key: b'%>C\xb3\xa6\x17z\x0b\x16i\xd2\x91q\x07\x80\xda\x90|c\x8e3C\x02\x15\x90\x9f\x0f\xcc\x02M{\x01'
 Generated AES key length: 32
-Because your wxid's length is larger than 2, the second to last character's ASCII will be used as xor key.        
-54, <class 'int'>
-0/2537010
-500000/2537010
-1000000/2537010
-1500000/2537010
-2000000/2537010
-2500000/2537010
+Because your wxid's length is larger than 2, the second to last character's ASCII will be used as xor key.
+Key: 54, <class 'int'>
+0/2537009
+500000/2537009
+1000000/2537009
+1500000/2537009
+2000000/2537009
+2500000/2537009
 Size of AES decrypted header: 1024
-Size of dexored data: 2537010
+Size of dexored data: 2537009
+Size of total data: 2538033
+Size of original data: 2538040
 ```
