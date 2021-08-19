@@ -1,5 +1,5 @@
 # wxapkg_v1mmwx_decrypt
-DECRYPT process of V1MMWX kind of encryption. Python port of pc_wxapkg_decrypt (https://github.com/BlackTrace/pc_wxapkg_decrypt)
+DECRYPT process of V1MMWX type of encryption. Python port of pc_wxapkg_decrypt (https://github.com/BlackTrace/pc_wxapkg_decrypt)
 
 ## Usage
 
@@ -11,7 +11,7 @@ aes_iv_str = "the iv: 16 bytes"
 wxid = ""
 
 def show_help():
-    print(f"""{__file__}: Util for handling V1MMWX kind of encryption from wxapkg.
+    print(f"""{__file__}: Util for handling V1MMWX type of encryption from wxapkg.
 CLI options:
     -h      : print help.
     --help

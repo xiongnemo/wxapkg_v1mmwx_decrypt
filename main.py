@@ -9,7 +9,7 @@ def main(argv):
     wxid = ""
 
     def show_help():
-        print(f"""{__file__}: Util for handling V1MMWX kind of encryption from wxapkg.
+        print(f"""{__file__}: Util for handling V1MMWX type of encryption from wxapkg.
 CLI options:
     -h      : print help.
     --help
