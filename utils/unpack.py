@@ -32,13 +32,13 @@ def unpack_cli(in_filename: str, out_filename: str, pbkdf2_salt_str: str, aes_iv
 
     aes_out = cipher.decrypt(wxapkg_in_binary[6:1024 + 6])
 
-    xored_data = wxapkg_in_binary[1024 + 6:]
+    xored_data = wxapkg_in_binary[1024 + 6 + 1:]
 
     xor_key = 0x66
     if len(wxid) >= 2:
         xor_key = ord(wxid[-2])
         print("Because your wxid's length is larger than 2, the second to last character's ASCII will be used as xor key.")
-        print(f"{xor_key}, {type(xor_key)}")
+        print(f"Key: {xor_key}, {type(xor_key)}")
 
     buffer_size = len(xored_data)
     
@@ -55,6 +55,7 @@ def unpack_cli(in_filename: str, out_filename: str, pbkdf2_salt_str: str, aes_iv
     print(f"Size of AES decrypted header: {len(aes_out)}")
     print(f"Size of dexored data: {len(dexor_buffer)}")
     print(f"Size of total data: {len(out)}")
+    print(f"Size of original data: {len(wxapkg_in_binary)}")
 
     with open(out_filename, "wb") as wxapkg_out_file:
         wxapkg_out_file.write(out)
