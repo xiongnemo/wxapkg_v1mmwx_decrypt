@@ -1,5 +1,7 @@
 import getopt
 import sys
+import logging
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(name)s.%(funcName)s - %(levelname)s - %(message)s')
 
 def main(argv):
     in_filename = "__APP__.wxapkg"
