@@ -31,22 +31,19 @@ CLI options:
 
 ## Sample Usage
 
-```bash
-% python .\main.py --in_filename=samples/__APP__.wxapkg --wxid=wx****************
-Header check: Header from file: b'V1MMWX'
-Header check: V1MMWX_HEADER:    b'V1MMWX'
-Generated AES key: b'%>C\xb3\xa6\x17z\x0b\x16i\xd2\x91q\x07\x80\xda\x90|c\x8e3C\x02\x15\x90\x9f\x0f\xcc\x02M{\x01'
-Generated AES key length: 32
-Because your wxid's length is larger than 2, the second to last character's ASCII will be used as xor key.
-Key: 54, <class 'int'>
-0/2537009
-500000/2537009
-1000000/2537009
-1500000/2537009
-2000000/2537009
-2500000/2537009
-Size of AES decrypted header: 1024
-Size of dexored data: 2537009
-Size of total data: 2538033
-Size of original data: 2538040
+```# nemo @ nemo-workstation in \wxapkg_v1mmwx_decrypt on git:master x [14:10:26]
+$ python .\main.py --in_filename=samples/__APP__.wxapkg --wxid=wx<REDACTED>
+2023-09-14 14:11:04,439 - utils.unpack.check_v1mmwx_header - DEBUG - Header check: Header from file: b'V1MMWX'
+2023-09-14 14:11:04,439 - utils.unpack.check_v1mmwx_header - DEBUG - Header check: V1MMWX_HEADER:    b'V1MMWX'
+2023-09-14 14:11:04,440 - utils.unpack.unpack_cli - DEBUG - Generated AES key: b'<REDACTED>'
+2023-09-14 14:11:04,440 - utils.unpack.unpack_cli - DEBUG - Generated AES key length: 32
+2023-09-14 14:11:04,442 - utils.unpack.unpack_cli - DEBUG - Because your wxid's length is larger than 2, the second to last character's ASCII will be used as xor key.
+2023-09-14 14:11:04,443 - utils.unpack.unpack_cli - DEBUG - Key: 100, <class 'int'>
+2023-09-14 14:11:04,443 - utils.unpack.unpack_cli - INFO - 0/<REDACTED>
+2023-09-14 14:11:04,488 - utils.unpack.unpack_cli - INFO - 500000/<REDACTED>
+2023-09-14 14:11:04,533 - utils.unpack.unpack_cli - INFO - 1000000/<REDACTED>
+2023-09-14 14:11:04,554 - utils.unpack.unpack_cli - INFO - Size of AES decrypted header: <REDACTED>
+2023-09-14 14:11:04,554 - utils.unpack.unpack_cli - INFO - Size of dexored data: <REDACTED>
+2023-09-14 14:11:04,555 - utils.unpack.unpack_cli - INFO - Size of total data: <REDACTED>
+2023-09-14 14:11:04,555 - utils.unpack.unpack_cli - INFO - Size of original data: <REDACTED>
 ```
